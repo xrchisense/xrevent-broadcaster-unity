@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-09T12:41:19.366Z" agent="5.0 (Windows)" etag="DG44qzUPhbMwpbRTACui" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-09T12:48:01.723Z" agent="5.0 (Windows)" etag="jve38y8_6opkxx8G3voW" version="20.5.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -100,34 +100,28 @@
           <mxGeometry y="216" width="410" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-30" value="GeckoViewPLugin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1210" y="50" width="160" height="190" as="geometry" />
+          <mxGeometry x="1210" y="50" width="490" height="190" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-34" value="+ item: attribute" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PyPGjf6b6cz7I885E77s-30">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+          <mxGeometry y="26" width="490" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-37" value="+ item: attribute" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PyPGjf6b6cz7I885E77s-30">
-          <mxGeometry y="52" width="160" height="26" as="geometry" />
+          <mxGeometry y="52" width="490" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-31" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PyPGjf6b6cz7I885E77s-30">
-          <mxGeometry y="78" width="160" height="26" as="geometry" />
+          <mxGeometry y="78" width="490" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-32" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PyPGjf6b6cz7I885E77s-30">
-          <mxGeometry y="104" width="160" height="8" as="geometry" />
+          <mxGeometry y="104" width="490" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="PyPGjf6b6cz7I885E77s-33" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PyPGjf6b6cz7I885E77s-30">
-          <mxGeometry y="112" width="160" height="26" as="geometry" />
+        <mxCell id="PyPGjf6b6cz7I885E77s-33" value="+ CreateInstance( width : int, height : int, userAgent :string) : GeckoViewPLugin" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PyPGjf6b6cz7I885E77s-30">
+          <mxGeometry y="112" width="490" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-36" value="+ item: attribute" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PyPGjf6b6cz7I885E77s-30">
-          <mxGeometry y="138" width="160" height="26" as="geometry" />
+          <mxGeometry y="138" width="490" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-35" value="+ item: attribute" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PyPGjf6b6cz7I885E77s-30">
-          <mxGeometry y="164" width="160" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="PyPGjf6b6cz7I885E77s-38" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="PyPGjf6b6cz7I885E77s-25" target="PyPGjf6b6cz7I885E77s-30">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1090" y="160" as="sourcePoint" />
-            <mxPoint x="1250" y="160" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry y="164" width="490" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-39" value="OVROverlay" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1210" y="260" width="160" height="86" as="geometry" />
@@ -145,6 +139,12 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1110" y="214.5" as="sourcePoint" />
             <mxPoint x="1270" y="214.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PyPGjf6b6cz7I885E77s-45" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="PyPGjf6b6cz7I885E77s-25" target="PyPGjf6b6cz7I885E77s-30">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="1120" y="380" as="sourcePoint" />
+            <mxPoint x="1280" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
