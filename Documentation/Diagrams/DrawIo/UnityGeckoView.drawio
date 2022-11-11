@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-11-10T19:16:01.141Z" agent="5.0 (Windows)" etag="8vvmfcN0pfkdPnIwEx59" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-11T11:51:52.861Z" agent="5.0 (Windows)" etag="wnSJRlsWRk919nECl16r" version="20.5.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="2069" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="cXel8oeyKj3Rl_VSzOkt-25" value="Android App API" style="shape=umlFrame;whiteSpace=wrap;html=1;width=130;height=30;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1720" y="-240" width="390" height="200" as="geometry" />
+        <mxCell id="cXel8oeyKj3Rl_VSzOkt-25" value="Android App API" style="shape=umlFrame;whiteSpace=wrap;html=1;width=130;height=30;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1720" y="-240" width="600" height="200" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-106" value="Unity C#" style="shape=umlFrame;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="70" y="-200" width="1040" height="1300" as="geometry" />
@@ -235,7 +235,7 @@
           <mxGeometry y="60" width="460" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-67" value="BasicActivity" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="1520" y="950" width="270" height="86" as="geometry" />
+          <mxGeometry x="1933" y="-150" width="270" height="86" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-68" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PyPGjf6b6cz7I885E77s-67" vertex="1">
           <mxGeometry y="26" width="270" height="26" as="geometry" />
@@ -397,7 +397,7 @@
           <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
         <mxCell id="PyPGjf6b6cz7I885E77s-131" value="&lt;div align=&quot;left&quot;&gt;The Android Unity Player is the main activity to which a fragment is added. The fragment is the GeckoViewPlugin&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="1780" y="828" width="220" height="90" as="geometry" />
+          <mxGeometry x="1470" y="-380" width="220" height="90" as="geometry" />
         </mxCell>
         <mxCell id="cXel8oeyKj3Rl_VSzOkt-0" value="OVRPlugin.aar" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1170" y="-200" width="520" height="160" as="geometry" />
@@ -439,7 +439,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="cXel8oeyKj3Rl_VSzOkt-15" value="UnityPlayer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1520" y="828" width="160" height="86" as="geometry" />
+          <mxGeometry x="1720" y="-370" width="160" height="86" as="geometry" />
         </mxCell>
         <mxCell id="cXel8oeyKj3Rl_VSzOkt-16" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cXel8oeyKj3Rl_VSzOkt-15">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
@@ -458,8 +458,8 @@
         </mxCell>
         <mxCell id="cXel8oeyKj3Rl_VSzOkt-20" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="cXel8oeyKj3Rl_VSzOkt-15" target="PyPGjf6b6cz7I885E77s-67">
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
-            <mxPoint x="1310" y="930" as="sourcePoint" />
-            <mxPoint x="1470" y="930" as="targetPoint" />
+            <mxPoint x="1510" y="-398" as="sourcePoint" />
+            <mxPoint x="1670" y="-398" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="cXel8oeyKj3Rl_VSzOkt-21" value="Fragment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -478,6 +478,12 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1590" y="20" as="sourcePoint" />
             <mxPoint x="1760" y="-10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cXel8oeyKj3Rl_VSzOkt-27" value="" style="endArrow=none;html=1;rounded=0;fontColor=#000000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="PyPGjf6b6cz7I885E77s-131" target="cXel8oeyKj3Rl_VSzOkt-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1570" y="-430" as="sourcePoint" />
+            <mxPoint x="1620" y="-480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
