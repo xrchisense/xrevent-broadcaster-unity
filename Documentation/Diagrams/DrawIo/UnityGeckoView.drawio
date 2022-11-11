@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-11T12:21:33.558Z" agent="5.0 (Windows)" etag="q_IVlql6Mj6b_0vETwe1" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-11T12:24:26.564Z" agent="5.0 (Windows)" etag="6e8Vkf2H3yXfMFtFV4N_" version="20.5.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="2069" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -502,7 +502,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="cXel8oeyKj3Rl_VSzOkt-33" value="Display" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#000000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1810" y="270" width="460" height="164" as="geometry" />
+          <mxGeometry x="1810" y="270" width="460" height="190" as="geometry" />
         </mxCell>
         <mxCell id="cXel8oeyKj3Rl_VSzOkt-49" value="- pubSurfaceView : SurfaceView" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="cXel8oeyKj3Rl_VSzOkt-33">
           <mxGeometry y="26" width="460" height="26" as="geometry" />
@@ -519,8 +519,11 @@
         <mxCell id="cXel8oeyKj3Rl_VSzOkt-59" value="- init( int...) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="cXel8oeyKj3Rl_VSzOkt-33">
           <mxGeometry y="112" width="460" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="cXel8oeyKj3Rl_VSzOkt-36" value="+  GetSurfaceBytesBuffer ( width : int, height : int, quality : int ) : BytesBuffer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="cXel8oeyKj3Rl_VSzOkt-33">
+        <mxCell id="cXel8oeyKj3Rl_VSzOkt-60" value="- SetupApplicationSurfaceView( ) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="cXel8oeyKj3Rl_VSzOkt-33">
           <mxGeometry y="138" width="460" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cXel8oeyKj3Rl_VSzOkt-36" value="+ GetSurfaceBytesBuffer ( width : int, height : int, quality : int ) : BytesBuffer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="cXel8oeyKj3Rl_VSzOkt-33">
+          <mxGeometry y="164" width="460" height="26" as="geometry" />
         </mxCell>
         <mxCell id="cXel8oeyKj3Rl_VSzOkt-37" value="" style="endArrow=open;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;rounded=0;fontColor=#000000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="PyPGjf6b6cz7I885E77s-49" target="cXel8oeyKj3Rl_VSzOkt-33">
           <mxGeometry width="160" relative="1" as="geometry">
