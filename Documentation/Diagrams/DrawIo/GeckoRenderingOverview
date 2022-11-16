@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-16T14:40:41.372Z" agent="5.0 (Windows)" etag="AknpYSlRsmw_pclg_QnV" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-16T14:41:15.834Z" agent="5.0 (Windows)" etag="9ZmM08HFj0PgDlJdRAB_" version="20.5.3" type="github">
   <diagram id="TYfCgQo36471ZNfcouIL" name="Seite-1">
     <mxGraphModel dx="1865" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -35,7 +35,7 @@
         <mxCell id="xPMKAYYQuZE2fjJ9yqGy-8" value="&lt;div&gt;Texture2D&lt;/div&gt;GL_TEXTURE_2D" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="xPMKAYYQuZE2fjJ9yqGy-2">
           <mxGeometry x="220" y="160" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xPMKAYYQuZE2fjJ9yqGy-9" value="FBO end" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xPMKAYYQuZE2fjJ9yqGy-2">
+        <mxCell id="xPMKAYYQuZE2fjJ9yqGy-9" value="FBO end&lt;br&gt;(Frame Buffer)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xPMKAYYQuZE2fjJ9yqGy-2">
           <mxGeometry x="220" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xPMKAYYQuZE2fjJ9yqGy-15" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="xPMKAYYQuZE2fjJ9yqGy-2" source="xPMKAYYQuZE2fjJ9yqGy-10" target="xPMKAYYQuZE2fjJ9yqGy-11">
