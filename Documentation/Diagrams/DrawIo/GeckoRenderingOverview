@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-16T14:38:18.660Z" agent="5.0 (Windows)" etag="ffbLsZR7ABLBOUmNnZqY" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-16T14:40:41.372Z" agent="5.0 (Windows)" etag="AknpYSlRsmw_pclg_QnV" version="20.5.3" type="github">
   <diagram id="TYfCgQo36471ZNfcouIL" name="Seite-1">
     <mxGraphModel dx="1865" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -47,7 +47,7 @@
         <mxCell id="xPMKAYYQuZE2fjJ9yqGy-16" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="xPMKAYYQuZE2fjJ9yqGy-2" source="xPMKAYYQuZE2fjJ9yqGy-11" target="xPMKAYYQuZE2fjJ9yqGy-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xPMKAYYQuZE2fjJ9yqGy-11" value="GLES" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xPMKAYYQuZE2fjJ9yqGy-2">
+        <mxCell id="xPMKAYYQuZE2fjJ9yqGy-11" value="GLES" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E5CCFF;strokeColor=#CC99FF;" vertex="1" parent="xPMKAYYQuZE2fjJ9yqGy-2">
           <mxGeometry x="220" y="250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xPMKAYYQuZE2fjJ9yqGy-3" value="Unity" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#3399FF;strokeColor=#6c8ebf;" vertex="1" parent="1">
