@@ -5,6 +5,7 @@ import { createWebRtcTransport } from "./createWebrtcTransport";
 
 let mediasoupRouter : mediasoup.types.Router;
 let producerTransport: mediasoup.types.Transport;
+let producer: mediasoup.types.Producer;
 
 
 
@@ -44,6 +45,10 @@ const WebSocketConnection = async(websock: WebSocket.Server) => {
                 case 'connectProducerTransport':
                     onConnectProducerTransport(event,ws);
                 break;
+                
+                case 'produce':
+                    onProduce(event,ws,websock);
+                break;
             }
             
         });
@@ -80,9 +85,18 @@ const onCreateProducerTransport = async (event: string,ws: WebSocket) => {
 
 const onConnectProducerTransport = async (event:any,ws:WebSocket) => {
     await producerTransport.connect({dtlsParameters: event.dtlsParameters});
-    send(ws,'producerConnected',"X")
+    send(ws,'producerConnected',"producerConnected")
 }
 
+const onProduce = async (event:any, ws:WebSocket, websocketServer : WebSocket.Server) => {
+    const { kind, rtpParameters} = event;
+    producer = await producerTransport.produce({kind, rtpParameters});
+    const resp = {
+        id: producer.id
+    }
+    send(ws, 'produced',resp);
+    broadcast(websocketServer, 'newProducer', "new user");
+}
 
 const send = (ws: WebSocket, type: string, msg: any) => {
     const message = {
@@ -92,5 +106,17 @@ const send = (ws: WebSocket, type: string, msg: any) => {
 
     const resp = JSON.stringify(message);
     ws.send(resp);
+}
+
+const broadcast = (ws: WebSocket.Server,type: string,msg:any) => {
+    const message = {
+        type,
+        data: msg,
+    }
+    const resp = JSON.stringify(message);
+    ws.clients.forEach((client) =>
+    {
+        client.send(resp);
+    });
 }
 
