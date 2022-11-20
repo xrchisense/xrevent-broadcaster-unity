@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://meet.jit.si/libs/lib-jitsi-meet.min.js"></script>
+    <script src="./script.js"></script>
+
+</head>
+<body>
+    <button onclick="connect()">Connect to Room</button>
+    <a href="#" onclick="unload()">Unload</a>
+    <a href="#" onclick="switchVideo()">switchVideo</a>
+    <a href="#" onclick="startLocalTracks()">startVideo</a>
+    <div id="audioOutputSelectWrapper" style="display: none;">
+        Change audio output device
+        <select id="audioOutputSelect" onchange="changeAudioOutput(this)"></select>
+    </div>
+    <div id="audioInputSelectWrapper">
+        Change audio input device
+        <select id="audioInputSelect" onchange="changeAudioInput(this)"></select>
+    </div>
+    <div id="videoInputSelectWrapper">
+        Change video input device
+        <select id="videoInputSelect" onchange="changeVideoInput(this)"></select>
+    </div>
+    <!-- <video id="localVideo" autoplay="true"></video> -->
+    <!--<audio id="localAudio" autoplay="true" muted="true"></audio>-->
+</body>
+</html>
