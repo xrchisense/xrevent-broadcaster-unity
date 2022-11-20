@@ -13,6 +13,10 @@
 </head>
 <body>
     <button onclick="connect()">Connect to Room</button>
+
+
+
+
     <a href="#" onclick="unload()">Unload</a>
     <a href="#" onclick="switchVideo()">switchVideo</a>
     <a href="#" onclick="startLocalTracks()">startVideo</a>
@@ -20,11 +24,11 @@
         Change audio output device
         <select id="audioOutputSelect" onchange="changeAudioOutput(this)"></select>
     </div>
-    <div id="audioInputSelectWrapper">
+    <div id="audioInputSelectWrapper" style="display: none;">
         Change audio input device
         <select id="audioInputSelect" onchange="changeAudioInput(this)"></select>
     </div>
-    <div id="videoInputSelectWrapper">
+    <div id="videoInputSelectWrapper" style="display: none;">
         Change video input device
         <select id="videoInputSelect" onchange="changeVideoInput(this)"></select>
     </div>
