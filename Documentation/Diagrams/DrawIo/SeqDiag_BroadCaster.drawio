@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-24T09:20:40.396Z" agent="5.0 (Windows)" etag="asdHv9AS079rcKaJgFzB" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-24T09:22:26.909Z" agent="5.0 (Windows)" etag="RNwIvBrqppiCQAoc1at4" version="20.6.0" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1422" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -45,6 +45,16 @@
         <mxCell id="obsWLM1qKGEnBxRgLEz3-31" value="updateTexImage() (from media&lt;br&gt;Player to mSurface and OES)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="obsWLM1qKGEnBxRgLEz3-30" vertex="1" connectable="0">
           <mxGeometry x="0.6701" y="-1" relative="1" as="geometry">
             <mxPoint x="65" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SwqvhMLeM1HwQ16TBO-z-4" value="CreateInstance()" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="7baba1c4bc27f4b0-2">
+          <mxGeometry x="-0.0062" relative="1" as="geometry">
+            <mxPoint x="-96" y="70.11999999999989" as="sourcePoint" />
+            <mxPoint x="45" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-26" y="70" />
+            </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="7baba1c4bc27f4b0-3" value=":UnityEngine" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
