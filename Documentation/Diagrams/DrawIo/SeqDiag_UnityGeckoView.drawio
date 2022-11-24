@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-24T08:48:37.340Z" agent="5.0 (Windows)" etag="PPzU2mFqeKvJVTK4rdWv" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-24T09:41:55.906Z" agent="5.0 (Windows)" etag="fQZaKGt1y3O2WD8GcMPe" version="20.6.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="2035" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -22,7 +22,7 @@
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="45" y="80" width="10" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="3nuBFxr9cyL0pnOWT2aG-8" value="dispatch" style="verticalAlign=bottom;endArrow=block;entryX=0.159;entryY=0.132;shadow=0;strokeWidth=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-2" target="3nuBFxr9cyL0pnOWT2aG-6" edge="1">
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-8" value="CreateInstance()" style="verticalAlign=bottom;endArrow=block;entryX=0.159;entryY=0.132;shadow=0;strokeWidth=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-2" target="3nuBFxr9cyL0pnOWT2aG-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="275" y="160" as="sourcePoint" />
             <mxPoint as="offset" />
@@ -41,7 +41,17 @@
           <mxGeometry x="-50" y="80" width="100" height="520" as="geometry" />
         </mxCell>
         <mxCell id="uVbxyk5DVPg8WVLnTsuG-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="uVbxyk5DVPg8WVLnTsuG-1">
-          <mxGeometry x="45" y="80" width="10" height="410" as="geometry" />
+          <mxGeometry x="45" y="80" width="10" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="uVbxyk5DVPg8WVLnTsuG-3" value="Android Fragment" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uVbxyk5DVPg8WVLnTsuG-5" value="PluginFragment" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;exitX=0.5;exitY=0.222;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" target="3nuBFxr9cyL0pnOWT2aG-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="230.00000000000006" as="sourcePoint" />
+            <mxPoint as="offset" />
+            <mxPoint x="391.59000000000015" y="230.00000000000006" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
