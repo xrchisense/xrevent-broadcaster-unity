@@ -1,0 +1,137 @@
+{
+    "m_SelectedDeviceId": "bd0314a3277d",
+    "m_SelectedPackage": {
+        "deviceId": "bd0314a3277d",
+        "name": "com.XRchisense.XReventBroadcasterPlugin",
+        "processId": 10909,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.teslacoilsw.launcher",
+            "processId": 4019,
+            "exited": false
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 12130,
+            "exited": true
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 12658,
+            "exited": true
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 14666,
+            "exited": true
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 16020,
+            "exited": true
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 16666,
+            "exited": true
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 31493,
+            "exited": false
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 31940,
+            "exited": false
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 32469,
+            "exited": false
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 619,
+            "exited": false
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 3634,
+            "exited": false
+        },
+        {
+            "deviceId": "bd0314a3277d",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 10909,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}

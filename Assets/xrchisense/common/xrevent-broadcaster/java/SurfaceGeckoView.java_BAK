@@ -1,0 +1,16 @@
+package com.xrchisense.xrevent.broadcaster;
+
+import android.content.Context;
+
+import org.mozilla.geckoview.GeckoView;
+
+
+public class SurfaceGeckoView extends GeckoView{
+	
+	public SurfaceGeckoView(Context context)
+	{
+		super(context);
+		
+	}
+	
+}

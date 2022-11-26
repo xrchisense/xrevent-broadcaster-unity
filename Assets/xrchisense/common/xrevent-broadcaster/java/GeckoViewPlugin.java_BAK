@@ -1,0 +1,220 @@
+package com.xrchisense.xrevent.broadcaster;
+
+import com.unity3d.player.UnityPlayer;
+
+import android.util.Log;
+import android.os.Bundle;
+import android.content.Context;
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Surface;
+import android.view.InputDevice;
+import android.view.LayoutInflater;
+import android.widget.RelativeLayout;
+
+import org.mozilla.geckoview.GeckoRuntime;
+import org.mozilla.geckoview.GeckoRuntimeSettings;
+import org.mozilla.geckoview.GeckoSession;
+import org.mozilla.geckoview.GeckoSessionSettings;
+
+
+public class GeckoViewPlugin extends Fragment implements GeckoRuntime.Delegate{
+	static String FRAGMENT_TAG = "BroadcasterPluginFragment";
+	static GeckoViewPlugin instance;
+	
+	static int width;
+	static int height;
+	static int defaultUserAgent = GeckoSessionSettings.USER_AGENT_MODE_MOBILE;
+	
+	private SurfaceGeckoView mGeckoView;
+	
+	
+	private static GeckoRuntime mRuntime;
+	private GeckoSession mSession;
+	
+	
+	/*
+	/ Functions called externally from Unity script.
+	/
+	*/
+	public static GeckoViewPlugin CreateInstance(int width, int height, String defaultUserAgent){
+		Log.d("[ xrevent ]", "[ GeckoViewPlugin ] CreateInstance.");
+		
+		// Create new fragment
+		GeckoViewPlugin pluginFragment = new GeckoViewPlugin();
+		pluginFragment.width 			= width;
+		pluginFragment.height 			= height;
+		//pluginFragment.defaultUserAgent = defaultUserAgent;
+		pluginFragment.setRetainInstance(true);
+		
+		AddFragment(pluginFragment);
+		
+		return pluginFragment;
+	}
+	
+	public static void DebugMsg(String msg){
+		Log.i("[ xrevent ]", "[ GeckoViewPlugin ]: " + msg);
+	}
+	
+	
+	public void LoadURL(final String url) {
+		Log.d("[ xrevent ]", "[ GeckoViewPlugin ] LoadURL.");
+        final Activity a = UnityPlayer.currentActivity;
+        a.runOnUiThread(new Runnable() {public void run() {
+            if (mGeckoView == null || mGeckoView.getSession()==null) {
+				Log.d("[ xrevent ]", "[ GeckoViewPlugin ] Session is null.");
+                return;
+            }
+            mGeckoView.getSession().loadUri(url);
+
+        }});
+    }
+	
+	
+	
+	
+	/*
+	/ Functions for creating the fragment and GeckoView
+	/
+	*/
+	private static void AddFragment(Fragment fragment){
+		Log.d("[ xrevent ]", "[ GeckoViewPlugin ] AddFragment.");
+		
+		// Get the first leaf view (i.e. a view without children) of the current activity UnityPlayer.
+		ViewGroup rootView = (ViewGroup)UnityPlayer.currentActivity.findViewById(android.R.id.content);
+		View topMostView = getLeafView(rootView);
+		
+		if(topMostView != null){
+			ViewGroup leafParent = (ViewGroup)topMostView.getParent();
+			
+			if(leafParent != null){
+				leafParent.setId(0x20348);
+
+                FragmentManager fragmentManager = UnityPlayer.currentActivity.getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.add(leafParent.getId(), fragment, FRAGMENT_TAG);
+                fragmentTransaction.commit();
+				
+            }
+				
+		}
+		
+	}
+	
+	private static View getLeafView(View view) {
+        if (view instanceof ViewGroup) {
+            ViewGroup vg = (ViewGroup)view;
+            for (int i = 0; i < vg.getChildCount(); ++i) {
+                View chview = vg.getChildAt(i);
+                View result = getLeafView(chview);
+                if (result != null)
+                    return result;
+            }
+            return null;
+        }
+        else {
+            return view;
+        }
+    }
+	
+	
+	
+	@Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+		super.onCreate(savedInstanceState);
+		Log.d("[ xrevent ]", "[ GeckoViewPlugin ] onCreate.");
+		setRetainInstance(true);
+	}
+	
+	@Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
+        Log.d("[ xrevent ]", "[ GeckoViewPlugin ] onCreateView.");
+
+        // can use this to not show window
+		// getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.ADJUST_NOTHING|     WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+		// Log.d("[ xrevent ]", "[ GeckoViewPlugin ] " + parent.getContext().getPackageName());
+		
+		// The to be inflated layout comes from the activity_main.xml ressource file 
+		// located in the Unity folder 'Assets/Plugins/Android/res/layout'.
+		// As there is no .aar and it is compiled by Unity, there is no calling via R.layout.main_activity
+		// Read more about it at: https://twodee.org/blog/4951
+		int activity_mainID = getResources().getIdentifier("activity_main", "layout", parent.getContext().getPackageName());
+        int relativeLayoutID = getResources().getIdentifier("relativeLayout", "id", parent.getContext().getPackageName());
+		
+		View mView =  inflater.inflate(activity_mainID, parent, false);
+		RelativeLayout relativeLayout = (RelativeLayout) mView.findViewById(relativeLayoutID);
+		
+		mGeckoView = new SurfaceGeckoView(mView.getContext());
+		
+		relativeLayout.addView (mGeckoView);
+        mGeckoView.setVisibility(View.VISIBLE);
+		
+		
+        Log.d("[ xrevent ]","[ GeckoViewPlugin ] Create new runtime.");
+        InitNewRuntime(mView);
+	   
+		Log.d("[ xrevent ]","[ GeckoViewPlugin ] Create new session.");
+		mSession = InitNewSession(mRuntime);
+		
+		
+        //initViews(mView);
+        Log.d("[ xrevent ]","[ GeckoViewPlugin ] Done initializing GeckoView.");
+
+
+
+        return mView;
+    }
+	
+    private void InitNewRuntime(View view){
+        if(mRuntime != null) return;
+        GeckoRuntimeSettings.Builder runtimeSettings = new GeckoRuntimeSettings.Builder();
+        runtimeSettings.inputAutoZoomEnabled(false);
+        mRuntime = GeckoRuntime.create(view.getContext(),runtimeSettings.build());
+        mRuntime.setDelegate(this);
+    }	
+	
+	private GeckoSession InitNewSession(GeckoRuntime runtime){
+		GeckoSessionSettings.Builder builder = new GeckoSessionSettings.Builder();
+//        builder.useMultiprocess(false);
+        builder.suspendMediaWhenInactive(true);
+        builder.userAgentMode(defaultUserAgent);
+        builder.viewportMode(GeckoSessionSettings.VIEWPORT_MODE_MOBILE);
+        builder.displayMode(GeckoSessionSettings.DISPLAY_MODE_STANDALONE);
+        
+		GeckoSession session = new GeckoSession(builder.build());
+        /*
+		session.setNavigationDelegate(this);
+        session.setContentDelegate(this);
+        session.setHistoryDelegate(this);
+        session.getTextInput().setDelegate(this);
+        session.setProgressDelegate( this);
+		*/
+        return session;
+	}
+	
+	
+	
+	
+	/*
+	/ Runtime delegates.
+	/
+	*/
+	@Override
+    public void onShutdown() {
+        Log.i("[ xrevent ]","[ GeckoViewPlugin ] onShutdown: Runtime has been shutdown.");
+        //UnityCallback.OnRuntimeShutdown();
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+}
