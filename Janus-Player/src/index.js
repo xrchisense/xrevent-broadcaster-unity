@@ -32,7 +32,7 @@ function connectToRoom () {
 
     janusServer = new janus(
         {
-            server: 'http://mostalbatros.me/janus',
+            server: 'https://vmd22715.contaboserver.net/janus',
             success: function() {
                 janusServer.attach({
                     plugin: "janus.plugin.streaming",
