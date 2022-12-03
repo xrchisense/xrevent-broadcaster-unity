@@ -7,12 +7,15 @@ var opaqueId = "janusTest-"+janus.randomString(12);
 
 var remoteTracks = {}, remoteVideos = 0, dataMid = null;
 var bitrateTimer = {};
+var autoplayAllowed = false;
+var readytoPlay = false;
 
 var streamsList = {};
 var selectedStream = 122;
 
 $(document).ready(function () {
     document.getElementById("startStreamButton").addEventListener('click',startStream);
+    document.getElementById("videoblockedButton").addEventListener('click',playCall);
     $("#joinButton").attr('disabled',false);
     janus.init({
         debug: true,
@@ -22,6 +25,14 @@ $(document).ready(function () {
         }
     });
 });
+
+function playCall() {
+    if (readytoPlay) {
+        startStream();
+    }
+    autoplayAllowed = true;
+}
+
 
 function connectToRoom () {
     // Make sure the browser supports WebRTC
@@ -330,8 +341,11 @@ function updateStreamsList() {
 			}
             
 		}
+        readytoPlay = true;
+        if (autoplayAllowed) {
+            startStream();
+        }
         
-        startStream();
     }});
 
 }

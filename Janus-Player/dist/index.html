@@ -11,6 +11,9 @@
     <script src="main.js"></script>
 </head>
 <body style="height: 100vh; overflow: hidden; background-color: black;">
+    <video src="myvideo.mp4" autoplay onplay="playCall()" style="height: 0px;"></video>
+    <button id="videoblockedButton">UnblockVideo</button>
+
     <button id="joinButton" disabled>Join</button> <button id="startStreamButton">GOOGOGO</button>
     <div id="video" style="width: 100%; height:100%;"></div>
 </body>
