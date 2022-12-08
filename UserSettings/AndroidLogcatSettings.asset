@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "bd0314a3277d",
+    "m_SelectedDeviceId": "1WMHH860GQ1363",
     "m_SelectedPackage": {
-        "deviceId": "bd0314a3277d",
+        "deviceId": "1WMHH860GQ1363",
         "name": "com.XRchisense.XReventBroadcasterPlugin",
-        "processId": 10909,
+        "processId": 13875,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -78,6 +78,18 @@
             "deviceId": "bd0314a3277d",
             "name": "com.XRchisense.XReventBroadcasterPlugin",
             "processId": 10909,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH860GQ1363",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 12992,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH860GQ1363",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 13875,
             "exited": false
         }
     ],
