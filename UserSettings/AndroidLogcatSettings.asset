@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH860GQ1363",
         "name": "com.XRchisense.XReventBroadcasterPlugin",
-        "processId": 13875,
+        "processId": 15937,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -90,6 +90,12 @@
             "deviceId": "1WMHH860GQ1363",
             "name": "com.XRchisense.XReventBroadcasterPlugin",
             "processId": 13875,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH860GQ1363",
+            "name": "com.XRchisense.XReventBroadcasterPlugin",
+            "processId": 15937,
             "exited": false
         }
     ],
