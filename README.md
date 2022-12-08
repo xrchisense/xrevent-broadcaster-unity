@@ -8,7 +8,8 @@ The XRevent Broadcaster consists of several program parts working in orchestrati
 ## Usage for Oculus 2
 1. Clone the Project from here to your local drive using git. Type 'git clone https://github.com/xrchisense/xrevent-broadcaster-unity.git' in your terminal.
 2. Use Unity Hub to open the project with Unity 2020.3.22f1
-3. Switch build platform in the 'Build Settings' to 'Android'
-4. 
+3. Open SampleScene in 'Assets\xrchisense\xrevent-test-broadcaster\scenes'
+4. Switch build platform in the 'Build Settings' to 'Android'
+5. 'Build and Run'
 
 
