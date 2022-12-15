@@ -1,5 +1,5 @@
 # xrevent-broadcaster-unity
-The XRevent Broadcaster consists of several program parts working in orchestration. Please read more about the overall architecture in our [Wiki](https://github.com/xrchisense/xrevent-broadcaster-unity/wiki). This repo inludes a Unity demo scene to demonstrate the use of the XRevent Proadcaster Plugin, which is responsible for displaying live video via GeckoView. It uses an OpenPlayer URL to demonstrate Video Playback.
+The XRevent Broadcaster consists of several program parts working in orchestration. Please read more about the overall architecture in our [Wiki](https://github.com/xrchisense/xrevent-broadcaster-unity/wiki). This repo inludes a Unity demo scene to demonstrate the use of the XRevent Broadcaster Plugin, which is responsible for displaying live video via GeckoView. It uses an OpenPlayer URL to demonstrate Video Playback.
 
 ## Prerequisites
 - Unity 2020.3.22f1
