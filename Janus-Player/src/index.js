@@ -24,13 +24,23 @@ $(document).ready(function () {
             connectToRoom();
         }
     });
+
+    setTimeout(function(){
+        if ( document.getElementById("videoTest").innerHTML == "autoplay"){
+            playCall();
+        }
+    },2000);
+    
 });
 
 function playCall() {
+    console.warn("ReadyToPlay: "+readytoPlay);
     if (readytoPlay) {
         startStream();
     }
     autoplayAllowed = true;
+    document.getElementById("videoblockedButton").hidden = true;
+    document.getElementById("videoTest").hidden = true;
 }
 
 
